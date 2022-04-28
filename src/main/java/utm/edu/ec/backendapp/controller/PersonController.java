@@ -14,7 +14,6 @@ import java.util.UUID;
 public class PersonController {
 
     @Autowired
-
     private IPersonService personService;
 
     @PostMapping()
@@ -32,4 +31,10 @@ public class PersonController {
     public void deletePerson(@RequestParam UUID id){
         personService.deletePerson(id);
     }
+
+   /* @GetMapping()
+    public List<Person> findPersonByUserName(@RequestParam String value){
+        return personService.findPersonByUserName(value);
+
+    }*/
 }

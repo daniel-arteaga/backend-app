@@ -27,4 +27,9 @@ public class PersonService implements IPersonService{
     @Override
     public void deletePerson(UUID id) { personRepository.deleteById(id);}
 
+    @Override
+    public List<Person> findPersonByUserName(String value){
+        return personRepository.findPersonByUserName(value);
+    }
+
 }

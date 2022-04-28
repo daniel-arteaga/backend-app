@@ -9,4 +9,5 @@ public interface IPersonService {
     void savePerson(Person person);
     void deletePerson(UUID id);
     List<Person> findPersons();
+    List<Person> findPersonByUserName(String value);
 }

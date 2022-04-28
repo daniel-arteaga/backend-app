@@ -8,6 +8,6 @@ import java.util.List;
 import java.util.UUID;
 
 @Repository
-public interface IPersonRepository extends JpaRepository<Person, UUID> {
+public interface IPersonRepository extends JpaRepository<Person, UUID>,CustomPersonRepository {
     List<Person> findByName(String name);
 }
