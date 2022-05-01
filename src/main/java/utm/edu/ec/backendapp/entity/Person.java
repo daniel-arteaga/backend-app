@@ -20,4 +20,6 @@ public class Person {
     private String address;
     private String username;
     private String userpass;
+    @ManyToOne
+    private Gender gender;
 }
