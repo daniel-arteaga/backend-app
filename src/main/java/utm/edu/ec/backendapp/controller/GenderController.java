@@ -11,6 +11,7 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping(path="/gender")
+@CrossOrigin(origins = "http://localhost:4200")
 public class GenderController {
     @Autowired
     private IGenderService genderService;
